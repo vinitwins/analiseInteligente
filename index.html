@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeloTax - Análise de Mensagens</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>VeloTax - Análise Inteligente de Mensagens</h1>
+    <div class="input-section">
+      <textarea id="messageInput" placeholder="Digite a mensagem do cliente" rows="4"></textarea>
+      <button id="analyzeButton">Analisar Mensagem</button>
+    </div>
+    <div id="resultSection" class="result-section hidden">
+      <h2>Resultados da Análise</h2>
+      <p><strong>Classificação:</strong> <span id="classification"></span></p>
+      <p><strong>Score de Atrito:</strong> <span id="churnScore"></span></p>
+      <p><strong>Sugestão de Resposta:</strong> <span id="responseSuggestion"></span></p>
+      <p><strong>Justificativa:</strong> <span id="justification"></span></p>
+      <button id="copyResponseButton" class="hidden">Copiar Resposta</button>
+    </div>
+    <div id="insightsSection" class="insights-section">
+      <h2>Insights Estratégicos</h2>
+      <ul id="insightsList"></ul>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/natural@6.12.0/lib/natural.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
